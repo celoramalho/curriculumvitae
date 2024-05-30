@@ -1,0 +1,18 @@
+Especialista em T.I., analista de infraestrutura e segurança da informação em ambientes empresariais e redes locais. Competente na gestão de ativos de T.I. (ITAM) e na gestão de identidade e acesso (IAM). Hábil em implementar soluções de cibersegurança para garantir a integridade e segurança de dispositivos, contas e ferramentas digitais corporativas, configurando firewall on-premise, EDR, SIEM, DLP.
+
+**Biografia**
+
+Especialista em T.I., com experiência em infraestrutura e segurança da informação em ambientes empresariais e redes locais. Atuo na gestão de identidade e acesso (IAM) e gestão e manutenção de ativos de T.I. (ITAM) envolvendo endpoints e equipamentos de rede. Com habilidade de programação, automatizo e desenvolvo soluções que me auxiliam na gestão de T.I. Implemento soluções de cibersegurança, incluindo a configuração de firewalls on-premise, ferramentas de detecção e resposta de endpoint, prevenção de perda de dados e gerenciamento de dispositivos.
+
+Especialista em Tecnologia da Informação, analista de infraestrutura e segurança da informação em ambientes empresariais e redes de computadores. Identity and access manager & IT Asset Management.
+
+
+
+ Atuo na gestão de identidade e acesso (IAM) e na gestão e manutenção de ativos de T.I. (ITAM), incluindo endpoints e equipamentos de rede. Utilizo habilidades de programação para automatizar processos e desenvolver soluções que auxiliam na gestão de T.I. Implemento soluções de cibersegurança, incluindo a configuração de firewalls on-premise,
+					ferramentas de detecção e resposta de endpoint (EDR), prevenção
+					de perda de dados (DLP) e gerenciamento de dispositivos usando ferramentas como Intune, crowdstrike e cyberguardian.</p>
+			</div>
+
+Especialista em Tecnologia da Informação e Redes, programador e
+					analista de segurança e infraestrutura de T.I. Profissional focado na área de Identity and Access Management, IT Asset Management e nas questões de cybersecurity que regem esses ambientes.</p>
+			</div>

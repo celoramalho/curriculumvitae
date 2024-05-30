@@ -11,7 +11,7 @@
 	--teal: #20c997;
 	--cyan: #17a2b8;
 	--white: #fff;
-	--gray-light: #E5E5E5;
+	--gray-light: #cccccc;
 	--gray-dark: #343a40;
 	--primary: #bd5d38;
 	--secondary: #6c757d;
@@ -21,6 +21,7 @@
 	--danger: #dc3545;
 	--light: #f8f9fa;
 	--dark: #343a40;
+	--dark-grey: #333333;
 	--breakpoint-xs: 0;
 	--breakpoint-sm: 576px;
 	--breakpoint-md: 768px;
@@ -28,21 +29,28 @@
 	--breakpoint-xl: 1200px;
 	--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  }
+}
 
-html,body{
+html,
+body {
 	scroll-behavior: smooth;
 }
-body{
-	background-color: var(--white-background);/* para testar */
+
+body {
+	margin: 0;
+	background-color: #6f42c1;
+	font-size: 15px;
+		/* para testar */
 }
-.menu-mobile{
+
+.menu-mobile {
 	background-color: red;
 	height: 100vh;
 	width: 100vw;
 }
+
 /* =================== Header =================== */
-header{
+header {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -53,24 +61,27 @@ header{
 	transition: 0.6s;
 	z-index: 100000;
 }
-.navbar{
+
+.navbar {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	width: 100%;
 	min-height: 8vh;
 	min-width: 100vh;
-	font-family: 'Poppins', sans-serif;	
+	font-family: 'Poppins', sans-serif;
 
 }
-header.sticky{
+
+header.sticky {
 	animation: animacaoBottomFade 0.7s;
-	display: 	block;	
+	display: block;
 	position: fixed;
 	background: #fff;
 	box-shadow: 0px 0px 6px #222222;
 }
-.navbar-logo{
+
+.navbar-logo {
 	width: 50px;
 	height: 50px;
 	border-radius: 100%;
@@ -78,154 +89,225 @@ header.sticky{
 	background: url(../img/logo.png);
 	background-size: cover;
 	background-position: center;
+}
 
-
-	text-decoration: none;
- }
-
- .navbar-logo spam{
+.navbar-logo spam {
 	content: "";
-	color:#FBFBF8;
+	color: #FBFBF8;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	font-family: 'Poppins', sans-serif;
 	font-size: 30px;
-	
- }
+}
 
-.navbar-logo:hover, .navbar-logo:focus {
-	text-decoration: none; }
-
-.navbar-links{
+.navbar-links {
 	display: flex;
- 	justify-content: space-around;
- 	width: 30%;
- 	min-width: 700px;
+	justify-content: space-around;
+	width: 30%;
+	min-width: 800px;
 
 }
-.navbar-links li{
-	position: relative;
+
+.navbar-links li {
 	list-style: none;
 }
-.navbar-links li a{
+
+.navbar-links li a {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	padding: 7px 0;
+	text-decoration: none;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-size: 1.2em;
+	letter-spacing: 4px;
+	color: var(--dark-grey)
+		/* Cor texto barra nav*/
+}
+
+.navbar-links li a::before {
 	content: "";
-	font-family: 'Poppins', sans-serif;
-	font-size: 17px;
-    color: blanchedalmond; /* Cor texto barra nav*/
-    text-decoration: none;
-    background: transparent;
-    border-bottom: 2px solid transparent;
-    transition: all 0.4s ease-in-out 0s; 
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 2px;
+	width: 100%;
+	background-color: var(--gray-dark);
+	transform: translateX(-105%);
+	transition: transform 0.4s ease-in-out;
 }
 
-.navbar-links li a:hover {
-	color: aqua;
-	font-size: 19px;
-	/* border-bottom-color: #FBFBF8; */
-	border-bottom-right-radius: 1px;
-	border-bottom-left-radius: 1px;
-     /* colocar animação */
+.navbar-links li a::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 2px;
+	width: 100%;
+	background-color: var(--gray-dark);
+	transform: translateX(105%);
+	transition: transform 0.3s ease-in-out;
+}
+
+.navbar-links li a:hover::after,
+.navbar-links li a:hover::before {
+	transform: translateX(0);
 }
 
 
- /* 3 linhas burger menu */
-.burger{
+/* 3 linhas burger menu */
+.burger {
 	right: 0;
 	display: none;
 	cursor: pointer;
 }
-.burger div{
+
+.burger div {
 	width: 25px;
 	height: 3px;
 	background-color: #FBFBF8;
 	margin: 5px;
 	transition: all 0.3s ease;
 }
-.toggle .line1{
-	transform: rotate(-45deg) translate(-5px,6px);
+
+.toggle .line1 {
+	transform: rotate(-45deg) translate(-5px, 6px);
 }
-.toggle .line2{
+
+.toggle .line2 {
 	opacity: 0;
 }
-.toggle .line3{
-	transform: rotate(45deg) translate(-5px,-6px);
+
+.toggle .line3 {
+	transform: rotate(45deg) translate(-5px, -6px);
 }
 
 /* =============================================== */
 /* =================== Home :) =================== */
-.title-home h1{
-	text-align: center;
-	font-family: "Roboto", sans-serif;
- 	font-weight: 1700;
-  	font-style: normal;
-	color: #333333;
-	margin: 0px;
-	padding: 0px;
-}
 
-.title-home h2{
-	text-align: center;
-	font-family: "Roboto", sans-serif;
-  	font-weight: 100;
-  	font-style: normal;
-	color: var(--gray-light);
-	margin: 0px;
-	padding: 0px;
-}
-
-#section-home{
+#section-home {
+	display: flex;
 	height: 100vh;
 	width: 100%;
-	background: white
+	background-color: #FFFFFF;
 	/* linear-gradient(#202020bb,rgba(14, 77, 139, 0.726)),url(../img/wallpaper-home.jpg); */
 	background-size: cover;
 	background-position: center;
 	transition: 1s;
 }
-.scrolado{
+.container-1 {
+	padding-left: 5vw;
+	display: block;
+	margin-top: 40vh;
+	left: 8vw;
+	height: 40vh;
+	width: 36vw;
+}
+.title-home h1 {
+	display: inline;
+	text-align: start;
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: var(--dark-grey);
+	margin: 0px;
+	padding: 0px;
+}
+
+.title-home h2 {
+	display: inline;
+	text-align: start;
+	font-family: "Roboto", sans-serif;
+	font-weight: 250;
+	font-style: normal;
+	color: var(--gray-light);
+	margin: 0px;
+	padding: 0px;
+}
+.text-quemsoueu{
+	display: inline-block;
+	text-align: justify;
+	font-family: "Roboto", sans-serif;
+	font-weight: 2500;
+	font-style: normal;
+	font-size: 1.2em;
+	color: var(--dark-grey);
+}
+.text-biografia {
+	margin: 0;
+	text-align: justify;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 1.2em;
+	color: var(--dark-grey);
+}
+.text-line{
+	display: inline-block;
+	height: 1.5px;
+	width: 15px;
+	margin-bottom: 5px;
+	background-color: var(--dark-grey);
+
+}
+.title-home {
+	display:inline-block;
+	max-width: 50vw;
+	width: 100%;
+	font-size: 390%;
+}
+
+.biografia-home {
+	max-width: 500px;
+	display: block;
+	max-width: 100%;
+	width: 100%;
+	margin-left: 10px;
+}
+
+.scrolado {
 	transition: 1s;
 	border-bottom-right-radius: 150px;
 }
-.mr-circle{
+
+.mr-circle {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 60px;
 	width: 60px;
 	border-radius: 100%;
-	
+
 }
-.mr-circle:hover{
+
+.mr-circle:hover {
 	background-color: #a6a9ac7e;
 }
-.container-1{
-	padding-top: 20vh;
-}
-.home-logo{
+
+.home-logo {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.logo-github{
+
+.logo-github {
 	color: blanchedalmond;
 	font-size: 130px;
 }
+
 /*
 .logo-github:hover{
 	color: aqua;
 }
 */
 
-.title-home{
-
-}
-
 
 
 /* =============================================== */
 
-#section_oque_fazemos{
+#section_curriculum {
 	height: 100vh;
 	width: 100%;
 	background-size: cover;
@@ -235,13 +317,15 @@ header.sticky{
 
 /* =============================================== */
 @media screen and (max-width: 1024px) {
-	body{
+	body {
 		overflow-x: hidden;
 	}
-	header{
+
+	header {
 		position: fixed;
 	}
-	.navbar-links{
+
+	.navbar-links {
 		position: fixed;
 		left: 0px;
 		height: 92vh;
@@ -249,87 +333,104 @@ header.sticky{
 		top: 8vh;
 		background-color: rgba(68, 68, 68, 0.486);
 		display: flex;
-		flex-direction: column; /*coluna: colum; */
+		flex-direction: column;
+		/*coluna: colum; */
 		align-items: center;
 		width: 100px;
 		transition: all 0.3s ease;
 		transform: translateX(-100%);
 	}
-	.navbar-links li{
+
+	.navbar-links li {
 		opacity: 0;
 	}
-	.navbar-links li a{
+
+	.navbar-links li a {
 		font-size: 50px;
 		color: #FBFBF8;
 	}
+
 	.navbar-links li a:hover {
 		color: aqua;
 		font-size: 50px;
 		/* border-bottom-color: #FBFBF8; */
 		border-bottom-right-radius: 1px;
 		border-bottom-left-radius: 1px;
-		 /* colocar animação */
+		/* colocar animação */
 	}
-	.burger{
+
+	.burger {
 		display: block;
 	}
-	.navbar{
+
+	.navbar {
 		background-color: rgb(68, 68, 68);
 	}
-	.projetos-useless{
+
+	.projetos-useless {
 		width: 40%;
 	}
 
-	.name-home h1{
+	.name-home h1 {
 		font-size: 13vw;
 	}
-	.name-home h2{
-		font-size: 4vw;
+
+	.name-home h2 {
+		font-size: 13vw;
 	}
-	.logo-github{
+
+	.logo-github {
 		font-size: 30vw;
 		max
 	}
-	.projetos-websitespessoais{
+
+	.projetos-websitespessoais {
 		width: 100%;
 		height: 45vw;
 	}
-	.navbar-ativo{
+
+	.navbar-ativo {
 		transform: translateX(0%);
 	}
-	.link-rodape{
+
+	.link-rodape {
 		width: 40%;
 	}
 }
 
 
 @media screen and (max-width: 650px) {
-	.container-useless{
+	.container-useless {
 		width: 100%;
 	}
-	.projetos-useless{
+
+	.projetos-useless {
 		width: 80%;
 	}
-	.link-rodape{
+
+	.link-rodape {
 		width: 100%;
 	}
 }
-@keyframes navLinkFade{
-	from{
+
+@keyframes navLinkFade {
+	from {
 		opacity: 0;
-		transform: translateX(-50px);	
+		transform: translateX(-50px);
 	}
-	to{
+
+	to {
 		opacity: 1;
 		transform: translateX(0px);
 	}
 }
 
-@keyframes animacaoBottomFade{
-	from{
-	opacity: 0;
+@keyframes animacaoBottomFade {
+	from {
+		opacity: 0;
 	}
-	to{
-	opacity: 1;
+
+	to {
+		opacity: 1;
 	}
 }
