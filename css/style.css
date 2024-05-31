@@ -51,24 +51,22 @@ body {
 
 /* =================== Header =================== */
 header {
+	display: inline-flex;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
-	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	transition: 0.6s;
 	z-index: 100000;
 }
 
 .navbar {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	display: inline-flex;
 	width: 100%;
-	min-height: 8vh;
+	min-height: 5vh;
 	min-width: 100vh;
+	height: auto;
 	font-family: 'Poppins', sans-serif;
 
 }
@@ -80,33 +78,51 @@ header.sticky {
 	background: #fff;
 	box-shadow: 0px 0px 6px #222222;
 }
-
-.navbar-logo {
-	width: 50px;
-	height: 50px;
-	border-radius: 100%;
-	margin: 0 auto;
-	background: url(../img/logo.png);
-	background-size: cover;
-	background-position: center;
-}
-
-.navbar-logo spam {
-	content: "";
-	color: #FBFBF8;
-	display: flex;
-	justify-content: space-around;
+.mr-circle{
+	position: absolute;
+	width: 60px;
+	height: 60px;
 	align-items: center;
-	font-family: 'Poppins', sans-serif;
-	font-size: 30px;
+	border: 1px solid black;
+	margin: 10px;
+	margin-left: 100px;
+}
+.navbar-logo a{
+	width: auto;
+	text-decoration: none;
+}
+.navbar-logo h2 {
+	display: inline-flex;
+	position: relative;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-size: 2em;
+	color: var(--dark-grey);
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+.navbar-logo h3 {
+	display: inline-flex;
+	position: relative;
+	font-family: "Roboto", sans-serif;
+	font-weight: 600;
+	font-size: 2em;
+	color: var(--dark-grey);
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
 }
 
 .navbar-links {
-	display: flex;
+	display: inline-flex;
+	position: relative;
+	align-items: right;
 	justify-content: space-around;
 	width: 30%;
 	min-width: 800px;
-
+	margin-left: 800px;
+	height: 100%;
 }
 
 .navbar-links li {
@@ -114,16 +130,17 @@ header.sticky {
 }
 
 .navbar-links li a {
-	display: inline-block;
+	display: inline-flex;
 	position: relative;
 	overflow: hidden;
 	padding: 7px 0;
+	height: 50%;
 	text-decoration: none;
 	font-family: "Roboto", sans-serif;
 	font-weight: 300;
 	font-size: 1.2em;
 	letter-spacing: 4px;
-	color: var(--dark-grey)
+	color: var(--dark-grey);
 		/* Cor texto barra nav*/
 }
 
@@ -132,7 +149,7 @@ header.sticky {
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	height: 2px;
+	height: 1.2px;
 	width: 100%;
 	background-color: var(--gray-dark);
 	transform: translateX(-105%);
@@ -144,7 +161,7 @@ header.sticky {
 	position: absolute;
 	right: 0;
 	top: 0;
-	height: 2px;
+	height: 1.2px;
 	width: 100%;
 	background-color: var(--gray-dark);
 	transform: translateX(105%);
@@ -156,6 +173,28 @@ header.sticky {
 	transform: translateX(0);
 }
 
+.icons-navbar{
+	display: inline-flex;
+	position: relative;
+	align-items: center;
+	justify-content: space-around;
+	width: auto;
+	height: auto;
+}
+.logo-contato-navbar {
+	position:sticky;
+	justify-content: space-around;
+	display: flex;
+	color: var(--dark-grey);
+	font-size: 2em;
+	margin-right: 10px;
+	margin-left:  10px;
+	
+}
+.logo-contato-navbar:hover {
+	transform: scale(1.10);
+	transition: 0.4s ease-in-out;
+}
 
 /* 3 linhas burger menu */
 .burger {
@@ -272,30 +311,6 @@ header.sticky {
 	border-bottom-right-radius: 150px;
 }
 
-.mr-circle {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 60px;
-	width: 60px;
-	border-radius: 100%;
-
-}
-
-.mr-circle:hover {
-	background-color: #a6a9ac7e;
-}
-
-.home-logo {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.logo-github {
-	color: blanchedalmond;
-	font-size: 130px;
-}
 
 /*
 .logo-github:hover{
