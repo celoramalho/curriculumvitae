@@ -38,7 +38,7 @@ body {
 
 body {
 	margin: 0;
-	background-color: #6f42c1;
+	background-color: var(--white-background);
 	font-size: 15px;
 		/* para testar */
 }
@@ -47,6 +47,13 @@ body {
 	background-color: red;
 	height: 100vh;
 	width: 100vw;
+}
+.fonte-padrao-p{
+	text-align: justify;
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
+	font-size: 1.2em;
+	color: var(--dark-grey);
 }
 
 /* =================== Header =================== */
@@ -230,7 +237,7 @@ header.sticky {
 	display: flex;
 	height: 100vh;
 	width: 100%;
-	background-color: #FFFFFF;
+	background-color: var(--white-background);
 	/* linear-gradient(#202020bb,rgba(14, 77, 139, 0.726)),url(../img/wallpaper-home.jpg); */
 	background-size: cover;
 	background-position: center;
@@ -276,12 +283,7 @@ header.sticky {
 }
 .text-biografia {
 	margin: 0;
-	text-align: justify;
-	font-family: "Roboto", sans-serif;
 	font-weight: 300;
-	font-style: normal;
-	font-size: 1.2em;
-	color: var(--dark-grey);
 }
 .text-line{
 	display: inline-block;
@@ -314,7 +316,7 @@ header.sticky {
 
 }
 .saiba-mais-buttom:hover{
-	background-color: #6610f2;
+	background-color: black;
 	transition: 0.4s ease-in-out;
 
 }
@@ -352,6 +354,12 @@ header.sticky {
 	background-size: cover;
 	background-position: center;
 	transition: 1s;
+	background-color: var(--white-background);
+	margin-top: 0;
+}
+.container-pro-xp{
+	padding-top: 100px;
+	margin: 60px;
 }
 
 /* =============================================== */
