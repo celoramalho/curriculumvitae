@@ -305,6 +305,30 @@ header.sticky {
 	width: 100%;
 	margin-left: 10px;
 }
+.saiba-mais-buttom{
+	display: block;
+	margin: 10px;
+	width: 100px;
+	background-color: var(--dark-grey);
+	border-radius: 15px 15px;
+
+}
+.saiba-mais-buttom:hover{
+	background-color: #6610f2;
+	transition: 0.4s ease-in-out;
+
+}
+.saiba-mais-buttom p{
+	display: inline-block;
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	font-weight: 2500;
+	font-style: normal;
+	font-size: 1.2em;
+	padding-left: 4.5px;
+	color: var(--white-background);
+	
+}
 
 .scrolado {
 	transition: 1s;
@@ -322,7 +346,7 @@ header.sticky {
 
 /* =============================================== */
 
-#section_curriculum {
+#section-curriculum {
 	height: 100vh;
 	width: 100%;
 	background-size: cover;
@@ -341,6 +365,7 @@ header.sticky {
 	}
 
 	.navbar-links {
+		/*
 		position: fixed;
 		left: 0px;
 		height: 92vh;
@@ -349,11 +374,12 @@ header.sticky {
 		background-color: rgba(68, 68, 68, 0.486);
 		display: flex;
 		flex-direction: column;
-		/*coluna: colum; */
+		
 		align-items: center;
 		width: 100px;
 		transition: all 0.3s ease;
 		transform: translateX(-100%);
+		/*coluna: colum; */
 	}
 
 	.navbar-links li {
