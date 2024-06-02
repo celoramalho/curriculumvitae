@@ -225,8 +225,8 @@ header.sticky {
 
 /* 3 linhas burger menu */
 .burger {
-	right: 0;
 	display: none;
+	right: 0;
 	cursor: pointer;
 }
 
@@ -390,9 +390,9 @@ header.sticky {
 	border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
 	position: absolute;
 	display: block;
-	margin-top: 400px;
+	margin-bottom: 10vh;
 	margin-right: 10%;
-	top: 0;
+	bottom: 0;
 	right: 0;
 }
 
@@ -481,7 +481,7 @@ header.sticky {
 
 	.arte-home {
 
-		transform: scale(70%) translateY(30%);
+		transform: scale(90%) translateY(30%);
 	}
 
 	.navbar-links {
@@ -522,6 +522,7 @@ header.sticky {
 
 	.burger {
 		display: block;
+		right: 0;
 	}
 
 	.navbar {}
