@@ -7,6 +7,9 @@
 	header {
 		position: fixed;
 	}
+    .logo-contato-navbar{
+        font-size: 5em;
+    }
 
 	.title-home {
 		font-size: 10vw;
