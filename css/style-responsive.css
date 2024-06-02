@@ -1,12 +1,12 @@
 
 @media screen and (max-width: 1024px) {
 	body {
+        overflow-x: hidden;
         width: 100vw;
-		overflow-x: hidden;
 	}
 
 	header {
-        max-width: 100vw;
+        max-width: 100%;
 		position: fixed;
 	}
     .logo-contato-navbar{
@@ -27,8 +27,8 @@
 		transform: scale(200%) translateX(20%) translateY(20%);
 	}
 	.container-1 {
+        max-width: 100vw;
 		transform: translateY(-70%);
-        width: 100vw;
 	}
 
 	.text-block-home {
@@ -36,10 +36,6 @@
 		margin: auto;
 	}
 
-	.arte-home {
-
-		transform: scale(90%) translateY(30%);
-	}
 
 	.navbar-links {
 		position: fixed;
