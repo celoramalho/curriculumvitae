@@ -202,7 +202,7 @@ header.sticky {
 .icons-navbar {
 	display: inline-flex;
 	position: relative;
-	align-items: center;
+	align-items:center;
 	justify-content: space-around;
 	width: auto;
 	height: auto;

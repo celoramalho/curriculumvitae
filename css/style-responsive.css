@@ -39,7 +39,6 @@
 	}
 
 	.navbar-links {
-		/*
 		position: fixed;
 		left: 0px;
 		height: 92vh;
@@ -79,7 +78,12 @@
 		right: 0;
 	}
 
-	.navbar {}
+	.icons-navbar {
+        display: flex;
+        position: relative;
+        margin-left: auto;
+        
+    }
 
 	.projetos-useless {
 		width: 40%;
