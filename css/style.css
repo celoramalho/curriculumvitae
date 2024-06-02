@@ -38,13 +38,16 @@ body {
 body {
 	overflow-x: hidden;
 	width: 100vw;
-	height: 400vh;
 	margin: 0;
 	padding: 0;
 	background-color: var(--background-color);
 	font-size: 15px;
 
 	/* para testar */
+}
+.body-2{
+	position: relative;
+	overflow-x: hidden;
 }
 
 .menu-mobile {
@@ -381,9 +384,9 @@ header.sticky {
 */
 .arte-home {
 	position: absolute;
-	margin-bottom: 10vh;
+	margin-top: -20vh;
 	margin-right: 10%;
-	bottom: 0;
+	top: 0;
 	right: 0;
 	max-width: 100vw;
 
