@@ -4,7 +4,7 @@ const navbarSlide = () => {
 	const nav = document.querySelector('.navbar-links')
 	const navLinks = document.querySelectorAll('.navbar-links li');
 	const navLinksA = document.querySelectorAll('.barra-item');
-	
+
 
 
 	burger.addEventListener('click', () => {
@@ -24,13 +24,13 @@ const navbarSlide = () => {
 
 
 	for (let i = 0; i < navLinksA.length; i++) {
-		navLinksA[i].addEventListener("click", function() {
+		navLinksA[i].addEventListener("click", function () {
 			//console.log(i)
 			nav.classList.toggle('navbar-ativo');
-		//Animate Links
-		navLinks.forEach((link) => {
-			link.style.animation = '';
-		});
+			//Animate Links
+			navLinks.forEach((link) => {
+				link.style.animation = '';
+			});
 		});
 	}
 
@@ -40,7 +40,19 @@ navbarSlide();
 
 navbarSlide();
 
-window.addEventListener("scroll", function(){
+window.addEventListener("scroll", function () {
 	var header = document.querySelector("header");
 	header.classList.toggle("sticky", window.scrollY > 930)
 })
+
+const checkbox = document.getElementById("colortheme-checkbox");
+const bodyclass = document.querySelector('.body');
+checkbox.addEventListener("change", () => {
+	bodyclass.classList.toggle('dark');
+});
+/*
+function darkmode() {
+	var element = document.body;
+	element.classList.toggle("dark-mode");
+}
+*/
