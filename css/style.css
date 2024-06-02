@@ -1,17 +1,19 @@
 @media (prefers-color-scheme: dark) {
-	.greece:root{
+	.greece:root {
 		/*site colors */
 		--sub2-text-color: #FFFFFF;
 		--sub-text-color: #cccccc;
 		--background-color: #333333;
 	}
 }
-.dark{
+
+.dark {
 	/*site colors */
 	--sub2-text-color: #FFFFFF;
 	--sub-text-color: #cccccc;
 	--background-color: #333333;
 }
+
 :root {
 	/*site colors */
 	--sub2-text-color: #cccccc;
@@ -38,8 +40,8 @@ body {
 	padding: 0;
 	background-color: var(--background-color);
 	font-size: 15px;
-	
-		/* para testar */
+
+	/* para testar */
 }
 
 .menu-mobile {
@@ -47,23 +49,26 @@ body {
 	height: 100vh;
 	width: 100vw;
 }
-.fonte-padrao-p{
+
+.fonte-padrao-p {
 	text-align: justify;
 	font-family: "Roboto", sans-serif;
 	font-style: normal;
 	font-size: 1.2em;
 	color: var(--sub-text-color);
 }
-.theme-buttom-div{
+
+.theme-buttom-div {
 	display: block;
 	position: fixed;
 	right: 0;
 	bottom: 0;
 
-	input{
+	input {
 		display: none;
 	}
 }
+
 /* =================== Header =================== */
 header {
 	position: absolute;
@@ -90,7 +95,8 @@ header.sticky {
 	box-shadow: 0px 0px 6px var(--sub-text-color);
 	background-color: var(--background-color);
 }
-.mr-circle{
+
+.mr-circle {
 	position: relative;
 	width: 60px;
 	height: 60px;
@@ -99,7 +105,8 @@ header.sticky {
 	margin: 10px;
 	margin-left: 100px;
 }
-.navbar-logo a{
+
+.navbar-logo a {
 	width: 50px;
 	height: 50px;
 	border-radius: 100%;
@@ -108,6 +115,7 @@ header.sticky {
 	background-position: center;
 	text-decoration: none;
 }
+
 .navbar-logo h2 {
 	display: inline-flex;
 	position: relative;
@@ -119,6 +127,7 @@ header.sticky {
 	margin: 0;
 	padding: 0;
 }
+
 .navbar-logo h3 {
 	display: inline-flex;
 	position: relative;
@@ -157,7 +166,7 @@ header.sticky {
 	font-size: 1.2em;
 	letter-spacing: 4px;
 	color: var(--sub-text-color);
-		/* Cor texto barra nav*/
+	/* Cor texto barra nav*/
 }
 
 .navbar-links li a::before {
@@ -189,7 +198,7 @@ header.sticky {
 	transform: translateX(0);
 }
 
-.icons-navbar{
+.icons-navbar {
 	display: inline-flex;
 	position: relative;
 	align-items: center;
@@ -197,16 +206,18 @@ header.sticky {
 	width: auto;
 	height: auto;
 }
+
 .logo-contato-navbar {
-	position:sticky;
+	position: sticky;
 	justify-content: space-around;
 	display: flex;
 	color: var(--sub-text-color);
 	font-size: 2em;
 	margin-right: 10px;
-	margin-left:  10px;
-	
+	margin-left: 10px;
+
 }
+
 .logo-contato-navbar:hover {
 	transform: scale(1.10);
 	transition: 0.4s ease-in-out;
@@ -222,7 +233,7 @@ header.sticky {
 .burger div {
 	width: 25px;
 	height: 3px;
-	background-color: #FBFBF8;
+	background-color: var(--sub-text-color);
 	margin: 5px;
 	transition: all 0.3s ease;
 }
@@ -238,10 +249,12 @@ header.sticky {
 .toggle .line3 {
 	transform: rotate(45deg) translate(-5px, -6px);
 }
-#colortheme-checkbox{
+
+#colortheme-checkbox {
 	display: none;
 }
-.icons-navbar label{
+
+.icons-navbar label {
 	cursor: pointer;
 }
 
@@ -258,14 +271,21 @@ header.sticky {
 	background-position: center;
 	transition: 1s;
 }
+
 .container-1 {
 	padding-left: 5vw;
 	display: block;
 	margin-top: 40vh;
 	left: 8vw;
 	height: 40vh;
+	width: 100%;
+}
+
+.text-block-home {
+	display: block;
 	width: 36vw;
 }
+
 .title-home h1 {
 	display: inline;
 	text-align: start;
@@ -287,7 +307,8 @@ header.sticky {
 	margin: 0px;
 	padding: 0px;
 }
-.text-quemsoueu{
+
+.text-quemsoueu {
 	display: inline-block;
 	text-align: justify;
 	font-family: "Roboto", sans-serif;
@@ -296,11 +317,13 @@ header.sticky {
 	font-size: 1.2em;
 	color: var(--sub-text-color);
 }
+
 .text-biografia {
 	margin: 0;
 	font-weight: 300;
 }
-.text-line{
+
+.text-line {
 	display: inline-block;
 	height: 1.5px;
 	width: 15px;
@@ -308,8 +331,9 @@ header.sticky {
 	background-color: var(--sub-text-color);
 
 }
+
 .title-home {
-	display:inline-block;
+	display: inline-block;
 	max-width: 50vw;
 	width: 100%;
 	font-size: 390%;
@@ -322,7 +346,8 @@ header.sticky {
 	width: 100%;
 	margin-left: 10px;
 }
-.saiba-mais-buttom{
+
+.saiba-mais-buttom {
 	display: block;
 	margin: 10px;
 	width: 100px;
@@ -330,12 +355,14 @@ header.sticky {
 	border-radius: 15px 15px;
 
 }
-.saiba-mais-buttom:hover{
+
+.saiba-mais-buttom:hover {
 	background-color: black;
 	transition: 0.4s ease-in-out;
 
 }
-.saiba-mais-buttom p{
+
+.saiba-mais-buttom p {
 	display: inline-block;
 	text-align: center;
 	font-family: "Roboto", sans-serif;
@@ -344,7 +371,7 @@ header.sticky {
 	font-size: 1.2em;
 	padding-left: 4.5px;
 	color: var(--background-color);
-	
+
 }
 
 .scrolado {
@@ -358,26 +385,29 @@ header.sticky {
 	color: aqua;
 }
 */
-.arte-home{
+.arte-home {
 	background-color: var(--sub-text-color);
 	border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
 	position: absolute;
 	display: block;
 	margin-top: 400px;
-	margin-right: 10VW;
+	margin-right: 10%;
 	top: 0;
 	right: 0;
 }
-.arte-home img{
+
+.arte-home img {
 	transform: scale(80%);
 }
-.floating{
+
+.floating {
 	animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
 }
-.blob-2{
+
+.blob-2 {
 	background-color: var(--sub-text-color);
 	border-radius: 53% 47% 52% 48% / 45% 48% 52% 55%;
 	position: absolute;
@@ -397,12 +427,13 @@ header.sticky {
 	transition: 1s;
 	margin-top: 0;
 }
-.container-pro-xp{
+
+.container-pro-xp {
 	padding-top: 100px;
 	margin: 60px;
 }
 
-.jobxp-block{
+.jobxp-block {
 	width: 70%;
 	height: 0;
 	border-radius: 4px;
@@ -410,11 +441,11 @@ header.sticky {
 	padding-bottom: 350px;
 	margin-bottom: 50px;
 	transition: 0.3s;
-	box-shadow:  0px 0px 8px 0px #3636367c;
+	box-shadow: 0px 0px 8px 0px #3636367c;
 }
 
 /* =============================================== */
-.section-jobxp{
+.section-jobxp {
 	height: 100vh;
 	width: 100%;
 	background-size: cover;
@@ -433,12 +464,26 @@ header.sticky {
 	header {
 		position: fixed;
 	}
-	.container-1{
+
+	.title-home {
+		font-size: 10vw;
+		text-align: center;
+	}
+
+	.container-1 {
 		transform: translateY(-70%);
 	}
-	.arte-home{
-		transform: scale(70%);
+
+	.text-block-home {
+		width: 80vw;
+		margin: auto;
 	}
+
+	.arte-home {
+
+		transform: scale(70%) translateY(30%);
+	}
+
 	.navbar-links {
 		/*
 		position: fixed;
@@ -463,7 +508,7 @@ header.sticky {
 
 	.navbar-links li a {
 		font-size: 50px;
-		color: #FBFBF8;
+		color: var(--sub-text-color);
 	}
 
 	.navbar-links li a:hover {
@@ -479,9 +524,7 @@ header.sticky {
 		display: block;
 	}
 
-	.navbar {
-		
-	}
+	.navbar {}
 
 	.projetos-useless {
 		width: 40%;
@@ -513,9 +556,7 @@ header.sticky {
 		width: 40%;
 	}
 
-	.arte-home{
-		
-	}
+	.arte-home {}
 }
 
 
@@ -531,5 +572,8 @@ header.sticky {
 	.link-rodape {
 		width: 100%;
 	}
-}
 
+	.arte-home {
+		margin-right: 0;
+	}
+}
