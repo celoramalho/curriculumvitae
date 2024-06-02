@@ -1,0 +1,118 @@
+
+@media screen and (max-width: 1024px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	header {
+		position: fixed;
+	}
+
+	.title-home {
+		font-size: 10vw;
+		text-align: center;
+	}
+	.text-quemsoueu{
+		font-size: 4vw;
+	}
+	.fonte-padrao-p{
+		font-size: 4vw;
+	}
+	.saiba-mais-buttom{
+		transform: scale(200%) translateX(20%) translateY(20%);
+	}
+	.container-1 {
+		transform: translateY(-70%);
+	}
+
+	.text-block-home {
+		width: 80vw;
+		margin: auto;
+	}
+
+	.arte-home {
+
+		transform: scale(90%) translateY(30%);
+	}
+
+	.navbar-links {
+		/*
+		position: fixed;
+		left: 0px;
+		height: 92vh;
+		min-width: 40vw;
+		top: 8vh;
+		background-color: rgba(68, 68, 68, 0.486);
+		display: flex;
+		flex-direction: column;
+		
+		align-items: center;
+		width: 100px;
+		transition: all 0.3s ease;
+		transform: translateX(-100%);
+		/*coluna: colum; */
+	}
+
+	.navbar-links li {
+		opacity: 0;
+	}
+
+	.navbar-links li a {
+		font-size: 50px;
+		color: var(--sub-text-color);
+	}
+
+	.navbar-links li a:hover {
+		color: aqua;
+		font-size: 50px;
+		/* border-bottom-color: #FBFBF8; */
+		border-bottom-right-radius: 1px;
+		border-bottom-left-radius: 1px;
+		/* colocar animação */
+	}
+
+	.burger {
+		display: block;
+		right: 0;
+	}
+
+	.navbar {}
+
+	.projetos-useless {
+		width: 40%;
+	}
+
+	.projetos-websitespessoais {
+		width: 100%;
+		height: 45vw;
+	}
+
+	.navbar-ativo {
+		transform: translateX(0%);
+	}
+
+	.link-rodape {
+		width: 40%;
+	}
+
+	.arte-home {}
+}
+
+
+@media screen and (max-width: 650px) {
+	.container-useless {
+		width: 100%;
+	}
+
+	.projetos-useless {
+		width: 80%;
+	}
+
+	.link-rodape {
+		width: 100%;
+	}
+
+	.arte-home {
+		margin-right: 0;
+	}
+}

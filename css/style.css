@@ -469,7 +469,15 @@ header.sticky {
 		font-size: 10vw;
 		text-align: center;
 	}
-
+	.text-quemsoueu{
+		font-size: 4vw;
+	}
+	.fonte-padrao-p{
+		font-size: 4vw;
+	}
+	.saiba-mais-buttom{
+		transform: scale(200%) translateX(20%) translateY(20%);
+	}
 	.container-1 {
 		transform: translateY(-70%);
 	}
@@ -529,19 +537,6 @@ header.sticky {
 
 	.projetos-useless {
 		width: 40%;
-	}
-
-	.name-home h1 {
-		font-size: 13vw;
-	}
-
-	.name-home h2 {
-		font-size: 13vw;
-	}
-
-	.logo-github {
-		font-size: 30vw;
-		max
 	}
 
 	.projetos-websitespessoais {
