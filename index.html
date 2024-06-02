@@ -5,6 +5,7 @@
 	<title>Marcelo Ramalho</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-animation.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
@@ -32,7 +33,7 @@
 
 				<li class="barra-item"><a class="js-scroll-trigger" href="#home-section">Home</a></li>
 
-				<li class="barra-item"><a class="js-scroll-trigger" href="#section-curriculum">CURRICULUM</a>
+				<li class="barra-item"><a class="js-scroll-trigger" href="#section-about-me">CURRICULUM</a>
 				</li>
 
 				<li class="barra-item"><a class="js-scroll-trigger" href="#sobremim-section">CERTIFICADOS</a>
@@ -52,6 +53,12 @@
 		</nav>
 
 	</header>
+
+	<div class="theme-buttom-div">
+		<input type="checkbox" id="theme-buttom" class="logo-contato-navbar">
+		<label for="theme-buttom" class="fa-solid fa-mountain-sun logo-contato-navbar"></label>
+	</div>
+
 	<section id="section-home">
 		<div class="container-1">
 			<div class="my-github">
@@ -67,20 +74,24 @@
 					analista de segurança e infraestrutura de T.I. Profissional focado na área de Identity and Access
 					Management, IT Asset Management e nas questões de cybersecurity que regem esses ambientes.</p>
 			</div>
-			<a class="js-scroll-trigger" href="#section-curriculum">
+			<a class="js-scroll-trigger" href="#section-about-me">
 				<div class="saiba-mais-buttom">
 					<p>Saiba mais</p>
 				</div>
-				<div class="arte-home">
+
+				<!-- Space Theme -->
+				<div class="arte-home space">
 					<div class="blob-2"></div>
-						<img class="floating" src="img/atronauta.png">
-					
+					<img class="floating" src="img/atronauta.png">
 				</div>
+				<!-- end of space theme in home -->
+
+
 			</a>
 
 		</div>
 	</section>
-	<section id="section-curriculum">
+	<section id="section-about-me">
 		<div class="container-pro-xp">
 			<div class="curriculum-sec-oque-eu-faco">
 				<h2>O que eu faço?</h2>
@@ -96,11 +107,20 @@
 					cyberguardian.
 				</p>
 			</div>
-		</div>
-		<div class="curriculum-sec-pro-experience">
-
+			<div></div>
 		</div>
 
+		
+
+	</section>
+	<section class="section-jobxp">
+		<!-- Job Experience Timeline -->
+		<div class="jobxp-timeline">
+			<div class="jobxp-job-1 jobxp-block">
+				<p class="jobxp-position-txt">Técnico de T.I.</p>
+				<p class="jobxp-company">INTIP Inteligência em Internet</p>
+			</div>
+		</div>
 	</section>
 
 
@@ -109,3 +129,5 @@
 
 
 </html>
+
+<!-- dash-case  section- -->

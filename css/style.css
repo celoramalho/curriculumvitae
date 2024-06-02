@@ -1,5 +1,5 @@
 @media (prefers-color-scheme: dark) {
-	:root{
+	.greece:root{
 		/*site colors */
 		--sub2-text-color: #FFFFFF;
 		--sub-text-color: #cccccc;
@@ -17,27 +17,6 @@
 	--sub2-text-color: #cccccc;
 	--sub-text-color: #333333;
 	--background-color: #FFFFFF;
-
-	--blue: #007bff;
-	--indigo: #6610f2;
-	--purple: #6f42c1;
-	--pink: #e83e8c;
-	--red: #dc3545;
-	--orange: #bd5d38;
-	--yellow: #ffc107;
-	--green: #28a745;
-	--teal: #20c997;
-	--cyan: #17a2b8;
-	--white: #fff;
-	--gray-dark: #343a40;
-	--primary: #bd5d38;
-	--secondary: #6c757d;
-	--success: #28a745;
-	--info: #17a2b8;
-	--warning: #ffc107;
-	--danger: #dc3545;
-	--light: #f8f9fa;
-	--dark: #343a40;
 	--breakpoint-xs: 0;
 	--breakpoint-sm: 576px;
 	--breakpoint-md: 768px;
@@ -73,7 +52,16 @@ body {
 	font-size: 1.2em;
 	color: var(--sub-text-color);
 }
+.theme-buttom-div{
+	display: block;
+	position: fixed;
+	right: 0;
+	bottom: 0;
 
+	input{
+		display: none;
+	}
+}
 /* =================== Header =================== */
 header {
 	display: inline-flex;
@@ -100,8 +88,9 @@ header.sticky {
 	animation: animacaoBottomFade 0.7s;
 	display: block;
 	position: fixed;
-	background: #fff;
-	box-shadow: 0px 0px 6px #222222;
+	background: var(--background-color);
+	box-shadow: 0px 0px 6px var(--sub-text-color);
+	background-color: var(--background-color);
 }
 .mr-circle{
 	position: absolute;
@@ -253,6 +242,8 @@ header.sticky {
 .icons-navbar label{
 	cursor: pointer;
 }
+
+
 /* =============================================== */
 /* =================== Home :) =================== */
 
@@ -397,7 +388,7 @@ header.sticky {
 
 /* =============================================== */
 
-#section-curriculum {
+#section-about-me {
 	height: 100vh;
 	width: 100%;
 	background-size: cover;
@@ -410,12 +401,29 @@ header.sticky {
 	margin: 60px;
 }
 
-/* =============================================== */
-@keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }    
+.jobxp-block{
+	width: 70%;
+	height: 0;
+	border-radius: 4px;
+	padding-top: 0;
+	padding-bottom: 350px;
+	margin-bottom: 50px;
+	transition: 0.3s;
+	box-shadow:  0px 0px 8px 0px #3636367c;
 }
+
+/* =============================================== */
+.section-jobxp{
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	transition: 1s;
+	margin-top: 0;
+}
+
+/* =============================================== */
+
 @media screen and (max-width: 1024px) {
 	body {
 		overflow-x: hidden;
@@ -515,24 +523,3 @@ header.sticky {
 	}
 }
 
-@keyframes navLinkFade {
-	from {
-		opacity: 0;
-		transform: translateX(-50px);
-	}
-
-	to {
-		opacity: 1;
-		transform: translateX(0px);
-	}
-}
-
-@keyframes animacaoBottomFade {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
