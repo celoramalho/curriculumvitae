@@ -272,17 +272,18 @@ header.sticky {
 
 .container-1 {
 	z-index: 99;
+	display: flex;
 	padding-left: 5vw;
-	display: block;
-	margin-top: 40vh;
 	left: 8vw;
-	height: 40vh;
-	width: 100vw;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
 }
 
 .text-block-home {
 	display: block;
 	width: 36vw;
+	height: auto;
 }
 
 .title-home h1 {
@@ -343,14 +344,19 @@ header.sticky {
 	display: block;
 	max-width: 100%;
 	width: 100%;
+
+}
+.text-block-home-padding{
 	margin-left: 10px;
+	div{
+		margin-bottom: 30px;
+	}
 }
 
 .saiba-mais-buttom {
 	position: relative;
 	overflow: hidden;
 	display: block;
-	margin: 10px;
 	width: 150px;
 	border: 1px;
 	border: 3px solid var(--sub-text-color);
@@ -359,12 +365,18 @@ header.sticky {
 		z-index: 100;
 		display: inline-block;
 		width: 100%;
-		text-align:center;
+		text-align: center;
 		font-family: "Roboto", sans-serif;
 		font-style: normal;
 		font-weight: bold;
 		font-size: 1.2em;
 		color: var(--sub-text-color);
+	}
+
+	a {
+		display: block;
+		height: 100%;
+		width: 100%;
 	}
 }
 
