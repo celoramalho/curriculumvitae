@@ -212,7 +212,7 @@ header.sticky {
 	justify-content: space-around;
 	width: auto;
 	height: auto;
-	margin-right: 10px;
+	margin-right: 20px;
 }
 
 .logo-contato-navbar {
@@ -466,8 +466,22 @@ header.sticky {
 }
 
 .container-pro-xp {
-	padding-top: 100px;
+	
 	margin: 60px;
+	h2{
+		display: inline-flex;
+		position: relative;
+		font-family: "Roboto", sans-serif;
+		font-weight: 3000;
+		font-size: 5em;
+		color: var(--sub-text-color);
+		text-decoration: none;
+		margin: 0;
+		padding: 0;
+	}
+	.curriculum-sec-oque-eu-faco{
+		padding-top: 10vh;
+	}
 }
 
 .jobxp-block {
