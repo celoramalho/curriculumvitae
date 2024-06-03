@@ -426,14 +426,9 @@ header.sticky {
 	top: 0;
 	right: 0;
 	max-width: 100vw;
-
 }
 
-.arte-home img {
-	transform: scale(80%);
-}
-
-.floating {
+.floating-element {
 	animation-name: floating;
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
