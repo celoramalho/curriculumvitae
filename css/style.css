@@ -1,7 +1,8 @@
 @media (prefers-color-scheme: dark) {
 	.greece:root {
 		/*site colors */
-		--sub2-text-color: #FFFFFF;
+		--sub2-text-color: #ffffff;
+		--sub2-text-color-rgb: 255, 255, 255;
 		--sub-text-color: #cccccc;
 		--background-color: #333333;
 	}
@@ -10,6 +11,7 @@
 .dark {
 	/*site colors */
 	--sub2-text-color: #cccccc;
+	--sub2-text-color-rgb: 204, 204, 204;
 	--sub-text-color: #FFFFFF;
 	--background-color: #333333;
 }
@@ -17,7 +19,8 @@
 :root {
 	/*site colors */
 	--sub2-text-color: #cccccc;
-	--sub-text-color: #333333;
+	--sub-text-color-rgb: 51, 51, 51;
+	--sub-text-color: rgb(51, 51, 51);
 	--background-color: #FFFFFF;
 	--colorrandom: #40007c;
 	--breakpoint-xs: 0;
@@ -29,9 +32,9 @@
 	--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-
 html,
 body {
+	font-family: "Roboto", sans-serif;
 	scroll-behavior: smooth;
 }
 
@@ -346,9 +349,11 @@ header.sticky {
 	width: 100%;
 
 }
-.text-block-home-padding{
+
+.text-block-home-padding {
 	margin-left: 10px;
-	div{
+
+	div {
 		margin-bottom: 30px;
 	}
 }
@@ -461,9 +466,10 @@ header.sticky {
 }
 
 .container-pro-xp {
-	
+
 	margin: 60px;
-	h2{
+
+	h2 {
 		display: inline-flex;
 		position: relative;
 		font-family: "Roboto", sans-serif;
@@ -474,30 +480,77 @@ header.sticky {
 		margin: 0;
 		padding: 0;
 	}
-	.curriculum-sec-oque-eu-faco{
+
+	.curriculum-sec-oque-eu-faco {
 		padding-top: 10vh;
 	}
 }
 
-.jobxp-block {
-	width: 70%;
-	height: 0;
-	border-radius: 4px;
-	padding-top: 0;
-	padding-bottom: 350px;
-	margin-bottom: 50px;
-	transition: 0.3s;
-	box-shadow: 0px 0px 8px 0px #3636367c;
-}
 
-/* =============================================== */
-.section-jobxp {
+
+/* ===================== jobxp ========================== */
+#section-jobxp {
 	height: 100vh;
 	width: 100%;
 	background-size: cover;
 	background-position: center;
 	transition: 1s;
 	margin-top: 0;
+}
+
+.jobxp-timeline {
+	margin: 0 auto;
+	max-width: 750px;
+	padding: 25px;
+	display: grid;
+	grid-template-columns: 1fr 3px 1fr;
+
+}
+
+.jobxp-block {
+	margin: 0 20px 20px 20px;
+}
+
+.jobxp-block_bg {
+	padding: 1.5em;
+	background-color: rgba(var(--sub-text-color-rgb), 0.02);
+	box-shadow: 0 0 5px var(--sub-text-color);
+	border-radius: 10px;
+}
+
+.jobxp-timeline-date {
+	margin: 0 20px 20px 20px;
+}
+
+.jobxp-timeline-date_right {
+	text-align: right;
+}
+
+.jobxp-timeline-middle_bar {
+	position: relative;
+	background-color: var(--sub-text-color);
+}
+
+.jobxp-timeline-point {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 15px;
+	height: 15px;
+	background-color: var(--sub-text-color);
+	border-radius: 50%;
+}
+
+.jobxp-timeline--title {
+	margin: 0;
+	font-weight: bold;
+	font-size: 1.3em;
+	color: var(--sub-text-color);
+	text-decoration: none;
+}
+.jobxp-timeline--paragraph{
+	line-height: 1.5;
 }
 
 /* =============================================== */
