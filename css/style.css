@@ -511,6 +511,10 @@ header.sticky {
 	margin: 0 20px 20px 20px;
 }
 
+.jobxp-block_bottom{
+	margin-bottom: 0;
+}
+
 .jobxp-block_bg {
 	padding: 1.5em;
 	background-color: rgba(var(--sub-text-color-rgb), 0.02);
@@ -540,6 +544,10 @@ header.sticky {
 	height: 15px;
 	background-color: var(--sub-text-color);
 	border-radius: 50%;
+}
+.jobxp-timeline-point_bottom{
+	top: initial;
+	bottom: 0;
 }
 
 .jobxp-timeline--title {
