@@ -462,7 +462,7 @@ header.sticky {
 /* =============================================== */
 
 #section-about-me {
-	height: 100vh;
+	height: max-content;
 	width: 100%;
 	background-size: cover;
 	background-position: center;
@@ -495,7 +495,7 @@ header.sticky {
 
 /* ===================== jobxp ========================== */
 #section-jobxp {
-	height: 100vh;
+	height: max-content;
 	width: 100%;
 	background-size: cover;
 	background-position: center;
