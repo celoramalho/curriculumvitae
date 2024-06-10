@@ -31,11 +31,11 @@
         transform: scale(150%) translateY(-25%) translateX(-7%);
     }
 
-    .logo-contato-navbar {
+    .clickable--icons {
         font-size: 5em;
     }
 
-    .title-home {
+    .home--title {
         font-size: 10vw;
         text-align: center;
     }
@@ -56,15 +56,18 @@
         }
     }
 
-    .container-1 {
+    .container {
         width: 100%;
         padding: 0;
         transform: translateY(-15%);
     }
+    .home--container-text{
+        align-items: normal;
+    }
 
     .text-block-home {
-        width: 90%;
-        margin: auto;
+        width: 100%;
+        margin-top: 270px;
     }
     header.sticky{
         position: absolute;
@@ -77,7 +80,7 @@
         z-index: 100000;
     }
 
-    .navbar-links {
+    .navbar--links {
         position: fixed;
         left: 0px;
         height: 100vh;
@@ -92,16 +95,16 @@
         /*coluna: colum; */
     }
 
-    .navbar-links li {
+    .navbar--links li {
         opacity: 0;
     }
 
-    .navbar-links li a {
+    .navbar--links li a {
         font-size: 50px;
         color: var(--sub-text-color);
     }
 
-    .navbar-links li a:hover {
+    .navbar--links li a:hover {
         color: aqua;
         font-size: 50px;
         /* border-bottom-color: #FBFBF8; */

@@ -489,8 +489,6 @@ header.sticky {
 		align-items: center;
 		justify-content: center;
 		align-items: center;
-		width: auto;
-		height: auto;
 		max-width: 400px;
 		max-height: 400px;
 		margin: 250px 30px 30px 100px;
@@ -504,7 +502,7 @@ header.sticky {
 		width: auto;
 	}
 	.about-me--block--lorem-ipsum{
-		margin: 80px 50px 50px 200px;
+		margin: 80px 50px 50px 10%;
 		width: auto;
 	}
 }
