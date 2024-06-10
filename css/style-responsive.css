@@ -56,10 +56,9 @@
         }
     }
 
-    .container {
+    .home--container-text {
         width: 100%;
         padding: 0;
-        transform: translateY(-15%);
     }
     .home--container-text{
         align-items: normal;
