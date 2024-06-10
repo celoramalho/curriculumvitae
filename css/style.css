@@ -8,9 +8,11 @@
 		--dark: #111111;
 	}
 }
-.sub-title-color{
+
+.sub-title-color {
 	color: var(--sub-title-color);
 }
+
 .dark {
 	/*site colors */
 	--sub2-text-color: #cccccc;
@@ -26,6 +28,7 @@
 	--sub-title-color-rgb: 51, 51, 51;
 	--sub-title-color: rgb(51, 51, 51);
 	--dark: #111111;
+	--margin-sections: 120px;
 	--background-color: #FFFFFF;
 	--colorrandom: #40007c;
 	--breakpoint-xs: 0;
@@ -33,13 +36,13 @@
 	--breakpoint-md: 768px;
 	--breakpoint-lg: 992px;
 	--breakpoint-xl: 1200px;
-	--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--font-family-principal: "Roboto", sans-serif;
 	--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 html,
 body {
-	font-family: "Roboto", sans-serif;
+	font-family: var(--font-family-principal);
 	scroll-behavior: smooth;
 }
 
@@ -53,7 +56,16 @@ body {
 
 	/* para testar */
 }
-
+h1, h2{
+	margin: 0;
+}
+section{
+	width: auto;
+	margin: 0px var(--margin-sections) 0px var(--margin-sections);
+}
+.container{
+	padding-top: 200px;
+}
 .body-2 {
 	position: relative;
 	overflow-x: hidden;
@@ -67,20 +79,25 @@ body {
 
 .fonte-padrao-p {
 	text-align: justify;
-	font-family: "Roboto", sans-serif;
 	font-style: normal;
 	font-size: 1.2em;
 	color: var(--sub-title-color);
 }
 
-.theme-buttom-div {
-	display: block;
+.theme--buttom {
+	z-index: 10000;
+	display: flex;
 	position: fixed;
 	right: 0;
 	bottom: 0;
+	margin: 20px 20px 20px 0;
 
 	input {
 		display: none;
+	}
+
+	label {
+		cursor: pointer;
 	}
 }
 
@@ -111,7 +128,7 @@ header.sticky {
 	background-color: var(--background-color);
 }
 
-.mr-circle {
+.navbar--site-logo {
 	position: relative;
 	width: 60px;
 	height: 60px;
@@ -121,7 +138,7 @@ header.sticky {
 	margin-left: 100px;
 }
 
-.navbar-logo a {
+.navbar--site-logo--link a {
 	width: 50px;
 	height: 50px;
 	border-radius: 100%;
@@ -131,10 +148,9 @@ header.sticky {
 	text-decoration: none;
 }
 
-.navbar-logo h2 {
+.navbar--site-logo--link h2 {
 	display: inline-flex;
 	position: relative;
-	font-family: "Roboto", sans-serif;
 	font-weight: 300;
 	font-size: 2em;
 	color: var(--sub-title-color);
@@ -143,10 +159,9 @@ header.sticky {
 	padding: 0;
 }
 
-.navbar-logo h3 {
+.navbar--site-logo--link h3 {
 	display: inline-flex;
 	position: relative;
-	font-family: "Roboto", sans-serif;
 	font-weight: 600;
 	font-size: 2em;
 	color: var(--sub-title-color);
@@ -155,7 +170,7 @@ header.sticky {
 	padding: 0;
 }
 
-.navbar-links {
+.navbar--links {
 	align-items: center;
 	display: flex;
 	justify-content: space-around;
@@ -165,18 +180,17 @@ header.sticky {
 	margin-left: auto;
 }
 
-.navbar-links li {
+.navbar--links li {
 	position: relative;
 	list-style: none;
 }
 
-.navbar-links li a {
+.navbar--links li a {
 	display: inline-flex;
 	position: relative;
 	overflow: hidden;
 	padding: 7px 0;
 	text-decoration: none;
-	font-family: "Roboto", sans-serif;
 	font-weight: 300;
 	font-size: 1.2em;
 	letter-spacing: 4px;
@@ -184,7 +198,7 @@ header.sticky {
 	/* Cor texto barra nav*/
 }
 
-.navbar-links li a::before {
+.navbar--links li a::before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -196,7 +210,7 @@ header.sticky {
 	transition: transform 0.4s ease-in-out;
 }
 
-.navbar-links li a::after {
+.navbar--links li a::after {
 	content: "";
 	position: absolute;
 	right: 0;
@@ -208,8 +222,8 @@ header.sticky {
 	transition: transform 0.3s ease-in-out;
 }
 
-.navbar-links li a:hover::after,
-.navbar-links li a:hover::before {
+.navbar--links li a:hover::after,
+.navbar--links li a:hover::before {
 	transform: translateX(0);
 }
 
@@ -223,7 +237,7 @@ header.sticky {
 	margin-right: 20px;
 }
 
-.logo-contato-navbar {
+.clickable--icons {
 	position: sticky;
 	justify-content: space-around;
 	display: flex;
@@ -234,7 +248,7 @@ header.sticky {
 
 }
 
-.logo-contato-navbar:hover {
+.clickable--icons:hover {
 	transform: scale(1.10);
 	transition: 0.3s ease-in-out;
 }
@@ -271,17 +285,15 @@ header.sticky {
 #section-home {
 	display: flex;
 	height: 100vh;
-	width: 100%;
 	/* linear-gradient(#202020bb,rgba(14, 77, 139, 0.726)),url(../img/wallpaper-home.jpg); */
 	background-size: cover;
 	background-position: center;
 	transition: 1s;
 }
 
-.container-1 {
+.home--container-text {
 	z-index: 99;
 	display: flex;
-	padding-left: 5vw;
 	left: 8vw;
 	align-items: center;
 	height: 100vh;
@@ -294,21 +306,17 @@ header.sticky {
 	height: auto;
 }
 
-.title-home h1 {
+.home--title h1 {
 	display: inline;
 	text-align: start;
-	font-family: "Roboto", sans-serif;
 	font-weight: 700;
 	font-style: normal;
 	color: var(--sub-title-color);
-	margin: 0px;
-	padding: 0px;
 }
 
-.title-home h2 {
+.home--title h2 {
 	display: inline;
 	text-align: start;
-	font-family: "Roboto", sans-serif;
 	font-weight: 250;
 	font-style: normal;
 	color: var(--sub2-text-color);
@@ -319,7 +327,6 @@ header.sticky {
 .text-quemsoueu {
 	display: inline-block;
 	text-align: justify;
-	font-family: "Roboto", sans-serif;
 	font-weight: 2500;
 	font-style: normal;
 	font-size: 1.2em;
@@ -340,7 +347,7 @@ header.sticky {
 
 }
 
-.title-home {
+.home--title {
 	display: inline-block;
 	max-width: 50vw;
 	width: 100%;
@@ -356,8 +363,6 @@ header.sticky {
 }
 
 .text-block-home-padding {
-	margin-left: 10px;
-
 	div {
 		margin-bottom: 30px;
 	}
@@ -376,7 +381,6 @@ header.sticky {
 		display: inline-block;
 		width: 100%;
 		text-align: center;
-		font-family: "Roboto", sans-serif;
 		font-style: normal;
 		font-weight: bold;
 		font-size: 1.2em;
@@ -445,25 +449,12 @@ header.sticky {
 	animation-timing-function: ease-in-out;
 }
 
-.blob-2 {
-	background-color: var(--sub-title-color);
-	border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
-
-}
-
-.blob-3 {
-	display: flex;
-	max-width: 80vw;
-	z-index: -999;
-	transform: scale(350%) translateY(20%);
-}
 
 
 /* =============================================== */
 
 #section-about-me {
 	height: max-content;
-	width: 100%;
 	background-size: cover;
 	background-position: center;
 	transition: 1s;
@@ -472,12 +463,10 @@ header.sticky {
 
 .container-pro-xp {
 
-	margin: 60px;
 
 	h2 {
 		display: inline-flex;
 		position: relative;
-		font-family: "Roboto", sans-serif;
 		font-weight: 3000;
 		font-size: 5em;
 		color: var(--sub-title-color);
@@ -486,17 +475,43 @@ header.sticky {
 		padding: 0;
 	}
 
-	.curriculum-sec-oque-eu-faco {
-		padding-top: 10vh;
+	.about-me--block {
+		display: inline-flex;
+		width: auto;
+		background-color: #cccccca8;
+		border-radius: 20px;
+		height: 600px;
+		overflow: hidden;
+	}
+
+	.about-me--block--profile-picture {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		align-items: center;
+		width: auto;
+		height: auto;
+		max-width: 400px;
+		max-height: 400px;
+		margin: 250px 30px 30px 100px;
+		opacity: 80%;
+		background-color: #cccccc;
+		border-radius: 50%;
+	}
+	img{
+		margin-top: -20%;
+		transform: scale(80%);
+		width: auto;
+	}
+	.about-me--block--lorem-ipsum{
+		margin: 80px 50px 50px 200px;
+		width: auto;
 	}
 }
-
-
 
 /* ===================== jobxp ========================== */
 #section-jobxp {
 	height: max-content;
-	width: 100%;
 	background-size: cover;
 	background-position: center;
 	transition: 1s;
@@ -513,10 +528,10 @@ header.sticky {
 }
 
 .jobxp-block {
-	margin: 0 20px 20px 20px;
+	margin: 0 20px 80px 20px;
 }
 
-.jobxp-block_bottom{
+.jobxp-block_bottom {
 	margin-bottom: 0;
 }
 
@@ -550,7 +565,8 @@ header.sticky {
 	background-color: var(--sub-title-color);
 	border-radius: 50%;
 }
-.jobxp-timeline-point_bottom{
+
+.jobxp-timeline-point_bottom {
 	top: initial;
 	bottom: 0;
 }
@@ -562,9 +578,30 @@ header.sticky {
 	color: var(--sub-title-color);
 	text-decoration: none;
 }
-.jobxp-timeline--paragraph{
+
+.jobxp-timeline--paragraph {
 	line-height: 1.5;
 	color: var(--sub-title-color);
 }
 
 /* =============================================== */
+
+
+/*============= themes ========================= */
+.inactive {
+	display: none;
+}
+
+/*===== Space ===== */
+.blob-2 {
+	background-color: var(--sub-title-color);
+	border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+
+}
+
+.blob-3 {
+	display: flex;
+	max-width: 80vw;
+	z-index: -999;
+	transform: scale(350%) translateY(20%);
+}

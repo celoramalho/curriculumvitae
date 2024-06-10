@@ -1,7 +1,7 @@
 const navbarSlide = () => {
 	const burger = document.querySelector('.burger');
-	const nav =document.querySelector('.navbar-links')
-	const navLinks = document.querySelectorAll('.navbar-links li');
+	const nav =document.querySelector('.navbar--links')
+	const navLinks = document.querySelectorAll('.navbar--links li');
 	
 
 	burger.addEventListener('click', () => {

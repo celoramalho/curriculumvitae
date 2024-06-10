@@ -25,50 +25,53 @@
 					<div class="line2"></div>
 					<div class="line3"></div>
 				</div>
-				<div class="mr-circle">
-					<a class="navbar-logo" href="index.html">
+				<div class="navbar--site-logo">
+					<a class="navbar--site-logo--link" href="index.html">
 						<h2>M</h2>
 						<h3>R<h3>
 					</a> <!-- Logo -->
 				</div>
-				<ul class="navbar-links">
+				<ul class="navbar--links">
 
-					<li class="barra-item"><a class="js-scroll-trigger" href="#home-section">HOME</a></li>
+					<li class="navbar--links-item"><a class="js-scroll-trigger" href="#home-section">HOME</a></li>
 
-					<li class="barra-item"><a class="js-scroll-trigger" href="#section-about-me">SOBRE MIM</a>
+					<li class="navbar--links-item"><a class="js-scroll-trigger" href="#section-about-me">SOBRE MIM</a>
 					</li>
 
-					<li class="barra-item"><a class="js-scroll-trigger" href="#section-jobxp">EXPERIÊNCIA</a>
+					<li class="navbar--links-item"><a class="js-scroll-trigger" href="#section-jobxp">EXPERIÊNCIA</a>
 					</li>
-					<li class="barra-item"><a class="js-scroll-trigger" href="#section-certifications">CERTIFICADOS</a>
+					<li class="navbar--links-item"><a class="js-scroll-trigger"
+							href="#section-certifications">CERTIFICADOS</a>
 					</li>
 
-					<li class="barra-item"><a class="js-scroll-trigger" href="#useless-section">CONTATO</a>
+					<li class="navbar--links-item"><a class="js-scroll-trigger" href="#useless-section">CONTATO</a>
 					</li>
 				</ul>
 				<div class="icons-navbar">
-					<a class="logo-contato-navbar" href="https://github.com/celoramalho" target="_blank"><i
+					<a class="clickable--icons" href="https://github.com/celoramalho" target="_blank"><i
 							class="fab fa-github"></i></a>
-					<a class="logo-contato-navbar"
+					<a class="clickable--icons"
 						href="https://www.linkedin.com/in/marcelo-ramalho-de-rodrigues-7240381b9" target="_blank"><i
 							class="fab fa-linkedin"></i></a>
-					<input type="checkbox" id="colortheme-checkbox" class="logo-contato-navbar">
-					<label for="colortheme-checkbox" class="fa-solid fa-circle-half-stroke logo-contato-navbar"></label>
+					<input type="checkbox" id="colortheme-checkbox">
+					<label for="colortheme-checkbox" class="fa-solid fa-circle-half-stroke clickable--icons"></label>
 				</div>
 			</nav>
 
 		</header>
 
-		<div class="theme-buttom-div">
-			<input type="checkbox" id="theme-buttom" class="logo-contato-navbar">
-			<label for="theme-buttom" class="fa-solid fa-mountain-sun logo-contato-navbar"></label>
+		<!-- Choose the site Theme-->
+		<div class="theme--buttom">
+			<input type="checkbox" id="theme--buttom--checkbox">
+			<label for="theme--buttom--checkbox" class="fa-solid fa-mountain-sun clickable--icons"></label>
 		</div>
 
+		<!-- Section Home, first section-->
 		<section id="section-home">
-			<div class="container-1">
+			<div class="home--container-text">
 				<div class="text-block-home">
 
-					<div class="title-home">
+					<div class="home--title">
 						<h2>Marcelo</h2>
 						<h1>Ramalho</h1>
 					</div>
@@ -90,6 +93,7 @@
 					</div>
 				</div>
 			</div>
+
 			<!-- Space Theme -->
 			<div class="arte-home space">
 				<div class="blob-2"></div>
@@ -104,130 +108,150 @@
 			</div>
 			<!-- end of space theme in home -->
 
+			<!-- Montain
+			  Theme -->
 		</section>
+
+		<!-- Section About me, second section-->
 		<section id="section-about-me">
-			<div class="container-pro-xp">
-				<div class="curriculum-sec-oque-eu-faco">
-					<h2>Sobre Mim</h2>
-					<p class="fonte-padrao-p"> Atuo na gestão de identidade e acesso (IAM) e na gestão e manutenção de
-						ativos de TI (ITAM), incluindo
-						endpoints e equipamentos de rede. Utilizo habilidades de programação para automatizar processos
-						e
-						desenvolver soluções que auxiliam na gestão de TI. Implemento soluções de cibersegurança,
-						incluindo
-						a
-						configuração de firewalls on-premise,
-						ferramentas de detecção e resposta de endpoint (EDR), prevenção
-						de perda de dados (DLP) e gerenciamento de dispositivos usando ferramentas como Intune,
-						crowdstrike
-						e
-						cyberguardian.
-					</p>
+			<div class="container">
+				<div class="container-pro-xp">
+					<div class="about-me--block">
+						<div class="about-me--block--profile-picture">
+							<img src="img\profile-picture.png">
+						</div>
+						<div class="about-me--block--lorem-ipsum">
+							<h2>Sobre Mim</h2>
+							<p class="fonte-padrao-p"> Atuo na gestão de identidade e acesso (IAM) e na gestão e
+								manutenção
+								de
+								ativos de TI (ITAM), incluindo
+								endpoints e equipamentos de rede. Utilizo habilidades de programação para automatizar
+								processos
+								e
+								desenvolver soluções que auxiliam na gestão de TI. Implemento soluções de
+								cibersegurança,
+								incluindo
+								a
+								configuração de firewalls on-premise,
+								ferramentas de detecção e resposta de endpoint (EDR), prevenção
+								de perda de dados (DLP) e gerenciamento de dispositivos usando ferramentas como Intune,
+								crowdstrike
+								e
+								cyberguardian.
+							</p>
+						</div>
+					</div>
+					<div class="about-me-skills">
+						<p>Minhas habilidades</p>
+						<ul class="my-skills">
+							<li class="skill-bar"><a class="js-scroll-trigger" href="#home-section">IAM</a></li>
+							<li class="skill-bar"><a class="js-scroll-trigger" href="#home-section">ITAM</a></li>
+							<li class="skill-bar"><a class="js-scroll-trigger" href="#home-section">Cybersecurity local
+									infra</a></li>
+						</ul>
+					</div>
+					<div></div>
 				</div>
-				<div class="about-me-skills">
-					<p>Minhas habilidades</p>
-					<ul class="my-skills">
-						<li class="skill-bar"><a class="js-scroll-trigger" href="#home-section">IAM</a></li>
-						<li class="skill-bar"><a class="js-scroll-trigger" href="#home-section">ITAM</a></li>
-						<li class="skill-bar"><a class="js-scroll-trigger" href="#home-section">Cybersecurity local
-								infra</a></li>
-					</ul>
-				</div>
-				<div></div>
+
+
 			</div>
-
-
-
 		</section>
+
+		<!-- Section Job Experience, third section-->
 		<section id="section-jobxp">
-			<!-- Job Experience Timeline -->
+			<div class="container">
+				<!-- Job Experience Timeline -->
 
-			<div class="jobxp-timeline">
-				<div class="jobxp-block jobxp-block_bg">
-					<h2 class="jobxp-timeline--title">Especialista em TI</h2>
-					<p class="jobxp-timeline--paragraph">FIT Energia</p>
-				</div>
-				<!-- Middle_bar -->
-				<div class="jobxp-timeline-middle_bar">
-					<div class="jobxp-timeline-point"></div>
-				</div>
-				<!-- End of Middle_bar -->
-				<div class="jobxp-block">
-					<div class="jobxp-timeline-date">abr de 2023 - o momento</div>
-				</div>
-				<div class="jobxp-block">
-					<div class="jobxp-timeline-date jobxp-timeline-date_right">abr de 2024 - o momento</div>
-				</div>
-				<!-- Middle_bar -->
-				<div class="jobxp-timeline-middle_bar">
-					<div class="jobxp-timeline-point"></div>
-				</div>
-				<!-- End of Middle_bar -->
-				<div class="jobxp-block jobxp-block_bg">
-					<h2 class="jobxp-timeline--title">Analista de infraestrutura de TI Pleno II</h2>
-					<p class="jobxp-timeline--paragraph">Hy Brazil Energia</p>
-				</div>
-				<div class="jobxp-block jobxp-block_bg">
-					<h2 class="jobxp-timeline--title">Analista de Suporte Computacional Pleno II</h2>
-					<p class="jobxp-timeline--paragraph">Hy Brazil Energia</p>
-				</div>
-				<!-- Middle_bar -->
-				<div class="jobxp-timeline-middle_bar">
-					<div class="jobxp-timeline-point"></div>
-				</div>
-				<!-- End of Middle_bar -->
+				<div class="jobxp-timeline">
+					<div class="jobxp-block jobxp-block_bg">
+						<h2 class="jobxp-timeline--title">Especialista em TI</h2>
+						<p class="jobxp-timeline--paragraph">FIT Energia</p>
+					</div>
+					<!-- Middle_bar -->
+					<div class="jobxp-timeline-middle_bar">
+						<div class="jobxp-timeline-point"></div>
+					</div>
+					<!-- End of Middle_bar -->
+					<div class="jobxp-block">
+						<div class="jobxp-timeline-date">abr de 2023 - o momento</div>
+					</div>
+					<div class="jobxp-block">
+						<div class="jobxp-timeline-date jobxp-timeline-date_right">abr de 2024 - o momento</div>
+					</div>
+					<!-- Middle_bar -->
+					<div class="jobxp-timeline-middle_bar">
+						<div class="jobxp-timeline-point"></div>
+					</div>
+					<!-- End of Middle_bar -->
+					<div class="jobxp-block jobxp-block_bg">
+						<h2 class="jobxp-timeline--title">Analista de infraestrutura de TI Pleno II</h2>
+						<p class="jobxp-timeline--paragraph">Hy Brazil Energia</p>
+					</div>
+					<div class="jobxp-block jobxp-block_bg">
+						<h2 class="jobxp-timeline--title">Analista de Suporte Computacional Pleno II</h2>
+						<p class="jobxp-timeline--paragraph">Hy Brazil Energia</p>
+					</div>
+					<!-- Middle_bar -->
+					<div class="jobxp-timeline-middle_bar">
+						<div class="jobxp-timeline-point"></div>
+					</div>
+					<!-- End of Middle_bar -->
 
-				<div class="jobxp-block">
-					<div class="jobxp-timeline-date">abr de 2023 - abr de 2024</div>
-				</div>
-				<div class="jobxp-block">
-					<div class="jobxp-timeline-date jobxp-timeline-date_right">ago de 2022 - abr de 2023</div>
-				</div>
+					<div class="jobxp-block">
+						<div class="jobxp-timeline-date">abr de 2023 - abr de 2024</div>
+					</div>
+					<div class="jobxp-block">
+						<div class="jobxp-timeline-date jobxp-timeline-date_right">ago de 2022 - abr de 2023</div>
+					</div>
 
-				<!-- Middle_bar -->
-				<div class="jobxp-timeline-middle_bar">
-					<div class="jobxp-timeline-point"></div>
-				</div>
-				<!-- End of Middle_bar -->
+					<!-- Middle_bar -->
+					<div class="jobxp-timeline-middle_bar">
+						<div class="jobxp-timeline-point"></div>
+					</div>
+					<!-- End of Middle_bar -->
 
 
-				<div class="jobxp-block jobxp-block_bg">
-					<h2 class="jobxp-timeline--title">Consultor de Tecnologia da Informação</h2>
-					<p class="jobxp-timeline--paragraph">Prefeitura Municipal de Nova Lima</p>
-				</div>
+					<div class="jobxp-block jobxp-block_bg">
+						<h2 class="jobxp-timeline--title">Consultor de Tecnologia da Informação</h2>
+						<p class="jobxp-timeline--paragraph">Prefeitura Municipal de Nova Lima</p>
+					</div>
 
-				<div class="jobxp-block jobxp-block_bg">
-					<h2 class="jobxp-timeline--title">Técnico de suporte em TI</h2>
-					<p class="jobxp-timeline--paragraph">G4F</p>
-				</div>
+					<div class="jobxp-block jobxp-block_bg">
+						<h2 class="jobxp-timeline--title">Técnico de suporte em TI</h2>
+						<p class="jobxp-timeline--paragraph">G4F</p>
+					</div>
 
-				<!-- Middle_bar -->
-				<div class="jobxp-timeline-middle_bar">
-					<div class="jobxp-timeline-point"></div>
-				</div>
-				<!-- End of Middle_bar -->
+					<!-- Middle_bar -->
+					<div class="jobxp-timeline-middle_bar">
+						<div class="jobxp-timeline-point"></div>
+					</div>
+					<!-- End of Middle_bar -->
 
-				<div class="jobxp-block">
-					<div class="jobxp-timeline-date">ago de 2022 - abr de 2023 · 9 meses</div>
-				</div>
-				<div class="jobxp-block">
-					<div class="jobxp-timeline-date jobxp-timeline-date_right">abr de 2021 - mai de 2022</div>
-				</div>
+					<div class="jobxp-block">
+						<div class="jobxp-timeline-date">ago de 2022 - abr de 2023 · 9 meses</div>
+					</div>
+					<div class="jobxp-block">
+						<div class="jobxp-timeline-date jobxp-timeline-date_right">abr de 2021 - mai de 2022</div>
+					</div>
 
-				<!-- Middle_bar -->
-				<div class="jobxp-timeline-middle_bar">
-					<div class="jobxp-timeline-point"></div>
-					<div class="jobxp-timeline-point jobxp-timeline-point_bottom"></div>
-				</div>
-				<!-- End of Middle_bar -->
+					<!-- Middle_bar -->
+					<div class="jobxp-timeline-middle_bar">
+						<div class="jobxp-timeline-point"></div>
+						<div class="jobxp-timeline-point jobxp-timeline-point_bottom"></div>
+					</div>
+					<!-- End of Middle_bar -->
 
-				<div class="jobxp-block jobxp-block_bottom jobxp-block_bg">
-					<h2 class="jobxp-timeline--title">Técnico de TI</h2>
-					<p class="jobxp-timeline--paragraph">INTIP Inteligência em Internet</p>
-				</div>
+					<div class="jobxp-block jobxp-block_bottom jobxp-block_bg">
+						<h2 class="jobxp-timeline--title">Técnico de TI</h2>
+						<p class="jobxp-timeline--paragraph">INTIP Inteligência em Internet</p>
+					</div>
 
+				</div>
 			</div>
 		</section>
+
+		<!-- Section certifications, fourth section-->
 		<section id="section-certifications">
 
 		</section>
